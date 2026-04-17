@@ -1,0 +1,12 @@
+{
+  "name": "consent-redirect",
+  "version": "1.0.0",
+  "description": "Página de consentimiento para redirección",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["consent", "redirect"],
+  "author": "",
+  "license": "MIT"
+}
