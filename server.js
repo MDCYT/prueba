@@ -11,7 +11,12 @@ const server = http.createServer((req, res) => {
 </Files>
 </Connector>`;
     
-    res.writeHead(200, { 'Content-Type': 'application/xml' });
+    res.writeHead(200, { 
+        'Content-Type': 'application/xml',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type'
+    });
     res.end(xml);
 });
 
