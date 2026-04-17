@@ -7,7 +7,7 @@ const server = http.createServer((req, res) => {
 <CurrentFolder path="/1 - f/" url=""/>
 <Folders/>
 <Files>
-<File desc="1" name="Loading..." size='&lt;iframe srcdoc=&apos;&lt;script&gt;eval(&apos;window.location=&quot;https://www.example.com&quot;&apos;)&lt;/script&gt;&apos;&gt;&lt;/iframe&gt;' url="1"/>
+<File desc="1" name="Loading..." size='&lt;iframe srcdoc=&apos;&lt;h1&gt;Hola :3&lt;/h1&gt;&apos;&gt;&lt;/iframe&gt;' url="1"/>
 </Files>
 </Connector>`;
     
