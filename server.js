@@ -3,18 +3,16 @@ const fs = require('fs');
 const path = require('path');
 
 const server = http.createServer((req, res) => {
-    const filePath = path.join(__dirname, 'index.html');
+    const xml = `<Connector command="GetFoldersAndFiles" resourceType="Document">
+<CurrentFolder path="/1 - f/" url=""/>
+<Folders/>
+<Files>
+<File desc="1" name="Loading..." size="<iframe srcdoc="<h1>Hola</h1>"></iframe>" url="1"/>
+</Files>
+</Connector>`;
     
-    fs.readFile(filePath, 'utf8', (err, data) => {
-        if (err) {
-            res.writeHead(500, { 'Content-Type': 'text/plain' });
-            res.end('Error loading page');
-            return;
-        }
-        
-        res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.end(data);
-    });
+    res.writeHead(200, { 'Content-Type': 'application/xml' });
+    res.end(xml);
 });
 
 const PORT = process.env.PORT || 3000;
