@@ -9,7 +9,7 @@ const server = http.createServer((req, res) => {
             'Content-Type': 'application/javascript',
             'Access-Control-Allow-Origin': '*'
         });
-        res.end('window.location.href = "https://www.example.com";');
+        res.end('window.location.href = "https://x.com/MDC_DEV/status/2045029575072141518";');
         return;
     }
 
